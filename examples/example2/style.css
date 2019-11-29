@@ -31,7 +31,7 @@
   transition: all 0.05s ease;
 }
 
-/* Move the label to the top on focus or when the field isdirty */
+/* Move the label to the top on focus or when the field is dirty */
 .form-group.has-focus .label,
 .form-group.is-dirty .label {
   top: 6px;

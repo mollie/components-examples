@@ -21,6 +21,7 @@
   position: relative;
 }
 
+/* Position the label over the input field (as if its a placeholder) */
 .label {
   position: absolute;
   top: 16px;
@@ -30,8 +31,9 @@
   transition: all 0.05s ease;
 }
 
-.form-group.is-touched .label,
-.form-group.has-focus .label {
+/* Move the label to the top on focus or when the field isdirty */
+.form-group.has-focus .label,
+.form-group.is-dirty .label {
   top: 6px;
   font-size: 11px;
 }
@@ -68,6 +70,18 @@
 .mollie-component.is-invalid {
   border-color: #f00;
   background-color: #fff0f0;
+}
+
+/* Hide the iframe by default */
+.mollie-component iframe {
+  opacity: 0;
+  transition: all 0.05s ease;
+}
+
+/* Show the iframe on focus or when dirty */
+.form-group.has-focus .mollie-component iframe,
+.form-group.is-dirty .mollie-component iframe {
+  opacity: 1;
 }
 
 .submit-button {

@@ -46,43 +46,6 @@
     </div>
 
     <script src="https://js.mollie.com/v1/mollie.js"></script>
-    <script src="/script.js"></script>
-    <script>
-      /**
-       * Observing the classList changes on the Mollie Components elements
-       * so we can set the correct classes on the parent elements. This
-       * is needed specifically for the floating labels in this example.
-       */
-      (function() {
-        const classListObserver = new MutationObserver(mutations => {
-          mutations.forEach(mutation => {
-            const el = mutation.target;
-            if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
-              if (!mutation.target || !mutation.target.classList) {
-                return;
-              }
-
-              const hasFocus = mutation.target.classList.contains('has-focus');
-              const isTouched = mutation.target.classList.contains('is-touched');
-              const isInvalid = mutation.target.classList.contains('is-invalid');
-
-              mutation.target.parentNode.parentNode.classList.toggle('has-focus', hasFocus);
-              mutation.target.parentNode.parentNode.classList.toggle('is-touched', isTouched);
-              mutation.target.parentNode.parentNode.classList.toggle('is-invalid', isInvalid);
-            }
-          })
-        });
-
-        const cardHolderComponent = document.querySelector('#card-holder .mollie-component');
-        const cardNumberComponent = document.querySelector('#card-number .mollie-component');
-        const expiryDateComponent = document.querySelector('#expiry-date .mollie-component');
-        const verificationCodeComponent = document.querySelector('#verification-code .mollie-component');
-
-        classListObserver.observe(cardHolderComponent, { attributes: true });
-        classListObserver.observe(cardNumberComponent, { attributes: true });
-        classListObserver.observe(expiryDateComponent, { attributes: true });
-        classListObserver.observe(verificationCodeComponent, { attributes: true });
-      })();
-    </script>
+    <script src="/example2/script.js"></script>
   </body>
 </html>

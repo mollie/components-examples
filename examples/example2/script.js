@@ -1,8 +1,8 @@
 /**
  * Initialize Mollie Components instance
  */
-const mollie = Mollie("pfl_saaa222aaa3", {
-  locale: "en_US"
+const mollie = Mollie("pfl_saaa222aaa3", { // You can find your Profile ID in the Dashboard (https://www.mollie.com/dashboard/developers/api-keys)
+  locale: "en_US" // Optional. If not provided, we will determine the users' language by looking at the document and/or userAgent.
 });
 
 /**

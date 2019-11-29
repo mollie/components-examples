@@ -8,11 +8,11 @@ const mollie = Mollie("pfl_saaa222aaa3", { // You can find your Profile ID in th
 /**
  * Error containers
  */
-const cardNumberErrors = document.getElementById("card-number-errors");
-const cardHolderErrors = document.getElementById("card-holder-errors");
-const expiryDateErrors = document.getElementById("expiry-date-errors");
-const verificationCodeErrors = document.getElementById("verification-code-errors");
-const formErrors = document.getElementById("form-errors");
+const cardNumberError = document.getElementById("card-number-error");
+const cardHolderError = document.getElementById("card-holder-error");
+const expiryDateError = document.getElementById("expiry-date-error");
+const verificationCodeError = document.getElementById("verification-code-error");
+const formError = document.getElementById("form-error");
 
 /**
  * Get elements
@@ -28,9 +28,9 @@ cardHolder.mount("#card-holder");
 
 cardHolder.addEventListener("change", event => {
   if (event.error && event.touched) {
-    cardHolderErrors.textContent = event.error;
+    cardHolderError.textContent = event.error;
   } else {
-    cardHolderErrors.textContent = "";
+    cardHolderError.textContent = "";
   }
 });
 
@@ -42,9 +42,9 @@ cardNumber.mount("#card-number");
 
 cardNumber.addEventListener("change", event => {
   if (event.error && event.touched) {
-    cardNumberErrors.textContent = event.error;
+    cardNumberError.textContent = event.error;
   } else {
-    cardNumberErrors.textContent = "";
+    cardNumberError.textContent = "";
   }
 });
 
@@ -56,9 +56,9 @@ expiryDate.mount("#expiry-date");
 
 expiryDate.addEventListener("change", event => {
   if (event.error && event.touched) {
-    expiryDateErrors.textContent = event.error;
+    expiryDateError.textContent = event.error;
   } else {
-    expiryDateErrors.textContent = "";
+    expiryDateError.textContent = "";
   }
 });
 
@@ -70,9 +70,9 @@ verificationCode.mount("#verification-code");
 
 verificationCode.addEventListener("change", event => {
   if (event.error && event.touched) {
-    verificationCodeErrors.textContent = event.error;
+    verificationCodeError.textContent = event.error;
   } else {
-    verificationCodeErrors.textContent = "";
+    verificationCodeError.textContent = "";
   }
 });
 
@@ -97,15 +97,15 @@ form.addEventListener("submit", async event => {
   event.preventDefault();
   disableForm();
 
-  // Reset possible form errors
-  formErrors.textContent = "";
+  // Reset possible form error
+  formError.textContent = "";
 
   // Get a payment token
   const { token, error } = await mollie.createToken();
 
   if (error) {
     enableForm();
-    formErrors.textContent = error.message;
+    formError.textContent = error.message;
     return;
   }
 

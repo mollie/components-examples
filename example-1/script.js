@@ -1,23 +1,19 @@
 /**
  * Initialize Mollie Components instance
  */
-const mollie = Mollie("pfl_saaa222aaa3", { // You can find your Profile ID in the Dashboard (https://www.mollie.com/dashboard/developers/api-keys)
-  locale: "en_US" // Optional. If not provided, we will determine the users' language by looking at the document and/or userAgent.
-});
+const mollie = Mollie(
+  "pfl_HgMrHhRAFm", // You can find your Profile ID in the Dashboard (https://www.mollie.com/dashboard/developers/api-keys)
+  {
+    locale: "en_US" // Optional. If not provided, we will determine the users' language by looking at the document and/or userAgent.
+  }
+);
 
-/**
- * Error containers
- */
-const cardNumberError = document.getElementById("card-number-error");
-const cardHolderError = document.getElementById("card-holder-error");
-const expiryDateError = document.getElementById("expiry-date-error");
-const verificationCodeError = document.getElementById("verification-code-error");
-const formError = document.getElementById("form-error");
 
 /**
  * Get elements
  */
 const form = document.getElementById("mcForm");
+const formError = document.getElementById("form-error");
 const submitButton = document.getElementById("submit-button");
 
 /**
@@ -25,6 +21,8 @@ const submitButton = document.getElementById("submit-button");
  */
 const cardHolder = mollie.createComponent("cardHolder");
 cardHolder.mount("#card-holder");
+
+const cardHolderError = document.getElementById("card-holder-error");
 
 cardHolder.addEventListener("change", event => {
   if (event.error && event.touched) {
@@ -40,6 +38,8 @@ cardHolder.addEventListener("change", event => {
 const cardNumber = mollie.createComponent("cardNumber");
 cardNumber.mount("#card-number");
 
+const cardNumberError = document.getElementById("card-number-error");
+
 cardNumber.addEventListener("change", event => {
   if (event.error && event.touched) {
     cardNumberError.textContent = event.error;
@@ -54,6 +54,8 @@ cardNumber.addEventListener("change", event => {
 const expiryDate = mollie.createComponent("expiryDate");
 expiryDate.mount("#expiry-date");
 
+const expiryDateError = document.getElementById("expiry-date-error");
+
 expiryDate.addEventListener("change", event => {
   if (event.error && event.touched) {
     expiryDateError.textContent = event.error;
@@ -67,6 +69,8 @@ expiryDate.addEventListener("change", event => {
  */
 const verificationCode = mollie.createComponent("verificationCode");
 verificationCode.mount("#verification-code");
+
+const verificationCodeError = document.getElementById("verification-code-error");
 
 verificationCode.addEventListener("change", event => {
   if (event.error && event.touched) {

@@ -6,9 +6,6 @@
   max-width: 500px;
   margin: 0 auto;
   padding: 20px;
-  border-radius: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: #fff;
 }
 
 .form-fields {
@@ -19,6 +16,8 @@
 
 .form-group {
   position: relative;
+  /* Set a min-height for when the components are still loading */
+  min-height: 52px;
 }
 
 /* Position the label over the input field (as if its a placeholder) */

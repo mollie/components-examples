@@ -3,11 +3,22 @@
 This repository contains examples on how to implement Mollie Components.
 
 ## Example 1 (regular labels)
-[HTML](/examples/example1/index.html) | [CSS](/examples/example1/style.css) | [Javascript](/examples/example1/script.js)
+[HTML](example-1/index.html) | [CSS](example-1/style.css) | [Javascript](example-1/script.js)
 
-![](screenshots/example1.gif)
+![](screenshots/example-1.gif)
 
 ## Example 2 (floating labels)
-[HTML](/examples/example2/index.html) | [CSS](/examples/example2/style.css) | [Javascript](/examples/example2/script.js)
+[HTML](example-2/index.html) | [CSS](example-2/style.css) | [Javascript](example-2/script.js)
 
-![](screenshots/example2.gif)
+![](screenshots/example-2.gif)
+
+## Running locally
+
+If you have Python on your local system you can run the following command in the root directory.
+
+```bash
+python -m SimpleHTTPServer 3000
+```
+
+Now open [localhost:3000](http://localhost:3000) in your browser to view
+the examples.

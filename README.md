@@ -1,6 +1,13 @@
 # Mollie Components Examples
 
-This repository contains examples on how to implement Mollie Components.
+This repository contains examples on how to implement [Mollie Components](https://docs.mollie.com/guides/mollie-components/overview).
+
+## Documentation
+
+* [Overview](https://docs.mollie.com/guides/mollie-components/overview)
+* [API reference](https://docs.mollie.com/guides/mollie-components/reference)
+* [Handling errors](https://docs.mollie.com/guides/mollie-components/handling-errors) 
+* [Styling](https://docs.mollie.com/guides/mollie-components/styling) 
 
 ## Example 1 (regular labels)
 [HTML](example-1/index.html) | [CSS](example-1/style.css) | [Javascript](example-1/script.js)

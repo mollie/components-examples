@@ -130,7 +130,7 @@ form.addEventListener("submit", async event => {
  * to set proper classes on the form-group elements: `has-focus` and `is-dirty`
  */
 
-function toggleFieldDirtyClass(fieldName, { dirty }) {
+function toggleFieldDirtyClass(fieldName, dirty) {
   const element = document.getElementById(fieldName);
   element.parentNode.classList.toggle('is-dirty', dirty);
 }

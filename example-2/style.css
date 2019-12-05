@@ -34,7 +34,7 @@
 /* Move the label to the top on focus or when the field is dirty */
 .form-group.has-focus .label,
 .form-group.is-dirty .label {
-  transform: scale(0.75) translateY(-75%);
+  transform: scale(0.65) translateY(-65%);
 }
 
 .form-error,

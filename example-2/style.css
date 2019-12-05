@@ -27,14 +27,14 @@
   left: 17px;
   color: #888;
 
+  transform-origin: top left;
   transition: all 0.05s ease;
 }
 
 /* Move the label to the top on focus or when the field is dirty */
 .form-group.has-focus .label,
 .form-group.is-dirty .label {
-  top: 6px;
-  font-size: 11px;
+  transform: scale(0.75) translateY(-75%);
 }
 
 .form-error,

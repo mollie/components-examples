@@ -1,31 +1,38 @@
 # Mollie Components Examples
 
-This repository contains examples on how to implement [Mollie Components](https://docs.mollie.com/guides/mollie-components/overview).
+This repository contains examples on how to implement [Mollie Components](https://docs.mollie.com/guides/mollie-components/overview). Mollie Components is a set of Javascript APIs that allow you to add the fields needed for credit card holder data to your own checkout, in a way that is fully PCI-DSS SAQ-A compliant.
 
 ## Documentation
 
-* [Overview](https://docs.mollie.com/guides/mollie-components/overview)
-* [API reference](https://docs.mollie.com/guides/mollie-components/reference)
-* [Handling errors](https://docs.mollie.com/guides/mollie-components/handling-errors) 
-* [Styling](https://docs.mollie.com/guides/mollie-components/styling) 
+- [Guide](https://docs.mollie.com/guides/mollie-components/overview)
+- [API Reference](https://docs.mollie.com/guides/mollie-components/reference)
+- [Handling errors](https://docs.mollie.com/guides/mollie-components/handling-errors)
+- [Styling](https://docs.mollie.com/guides/mollie-components/styling)
 
-## Example 1 (regular labels)
-[HTML](example-1/index.html) | [CSS](example-1/style.css) | [Javascript](example-1/script.js)
+## Examples
 
-![](screenshots/example-1.gif)
-
-## Example 2 (floating labels)
-[HTML](example-2/index.html) | [CSS](example-2/style.css) | [Javascript](example-2/script.js)
-
-![](screenshots/example-2.gif)
+- [Example 1](./example-1) Bear minimum example for mollie component ([codepen](example-2))
+- [Example 2](./example-2) Floating label ([codepen](example-2))
+- [Example 3](./example-3) compact version ([codepen](example-2))
 
 ## Running locally
 
-If you have Python on your local system you can run the following command in the root directory.
+We recommend that to serve the examples via a webserver. Although its plain HTML, CSS and JavaScript Mollie components needs a valid hostename (e.g. localhost or 127.0.0.1). For this readme we use the [serve](https://www.npmjs.com/package/serve) package.
+
+Clone the repo
 
 ```bash
-python -m SimpleHTTPServer 3000
+git clone git@github.com:mollie/components-examples.git
 ```
 
-Now open [localhost:3000](http://localhost:3000) in your browser to view
-the examples.
+Navigate to the the repo
+
+```bash
+cd components-example
+```
+
+Serve the examples via a webserver
+
+```bash
+npx serve
+```

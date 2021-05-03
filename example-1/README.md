@@ -1,0 +1,42 @@
+# Examples 1
+
+For more or other examples please check out our main [README](../)
+
+This example shows
+
+- Floating labels
+- Native CSS styling
+- Working with ES5
+
+[HTML](example-1/index.html) | [CSS](example-1/style.css) | [Javascript](example-1/script.js)
+
+![](screenshots/example-1.gif)
+
+## Documentation
+
+- [Guide](https://docs.mollie.com/guides/mollie-components/overview)
+- [API Reference](https://docs.mollie.com/guides/mollie-components/reference)
+- [Handling errors](https://docs.mollie.com/guides/mollie-components/handling-errors)
+- [Styling](https://docs.mollie.com/guides/mollie-components/styling)
+
+## Running locally
+
+We recommend that to serve the examples via a webserver. Although its plain HTML, CSS and JavaScript Mollie components needs a valid hostename (e.g. localhost or 127.0.0.1). For this readme we use the [serve](https://www.npmjs.com/package/serve) package.
+
+Clone the repo
+
+```bash
+git clone git@github.com:mollie/components-examples.git
+```
+
+Navigate to the the repo
+
+```bash
+cd components-example
+```
+
+Serve the examples via a webserver
+
+```bash
+npx serve
+```

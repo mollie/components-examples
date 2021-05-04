@@ -11,13 +11,13 @@ This repository contains examples on how to implement [Mollie Components](https:
 
 ## Examples
 
-- [Example 1](./example-1) Bare minimum example ([codepen](example-2))
+- [Example 1](./example-1) Bare minimum example ([codepen](example-1))
 - [Example 2](./example-2) Floating labels ([codepen](example-2))
-- [Example 3](./example-3) Compact version ([codepen](example-2))
+- [Example 3](./example-3) Compact version ([codepen](example-3))
 
 ## Running locally
 
-We recommend to serve the examples via a webserver. Although its plain HTML, CSS and JavaScript Mollie Components needs a valid hostename (e.g. localhost or 127.0.0.1). For this readme we use the [serve](https://www.npmjs.com/package/serve) package.
+In order to run the examples you need a webserver. Although its plain HTML, CSS and JavaScript Mollie Components needs a valid hostname (e.g. localhost or 127.0.0.1). For this README example we use the [serve](https://www.npmjs.com/package/serve) package but any other webserver should work just fine.
 
 1. Clone the repo
 

@@ -1,7 +1,7 @@
 /**
  * Initialize Mollie Components instance
  */
-const mollie = Mollie(
+ const mollie = Mollie(
   "pfl_HgMrHhRAFm", // You can find your Profile ID in the Dashboard (https://www.mollie.com/dashboard/developers/api-keys)
   {
     locale: "en_US", // Optional. If not provided, we will determine the users' language by looking at the document and/or userAgent.
@@ -24,7 +24,7 @@ cardHolder.mount("#card-holder");
 
 const cardHolderError = document.getElementById("card-holder-error");
 
-cardHolder.addEventListener("change", event => {
+cardHolder.addEventListener("change", (event) => {
   if (event.error && event.touched) {
     cardHolderError.textContent = event.error;
   } else {
@@ -40,7 +40,7 @@ cardNumber.mount("#card-number");
 
 const cardNumberError = document.getElementById("card-number-error");
 
-cardNumber.addEventListener("change", event => {
+cardNumber.addEventListener("change", (event) => {
   if (event.error && event.touched) {
     cardNumberError.textContent = event.error;
   } else {
@@ -56,7 +56,7 @@ expiryDate.mount("#expiry-date");
 
 const expiryDateError = document.getElementById("expiry-date-error");
 
-expiryDate.addEventListener("change", event => {
+expiryDate.addEventListener("change", (event) => {
   if (event.error && event.touched) {
     expiryDateError.textContent = event.error;
   } else {
@@ -70,9 +70,11 @@ expiryDate.addEventListener("change", event => {
 const verificationCode = mollie.createComponent("verificationCode");
 verificationCode.mount("#verification-code");
 
-const verificationCodeError = document.getElementById("verification-code-error");
+const verificationCodeError = document.getElementById(
+  "verification-code-error"
+);
 
-verificationCode.addEventListener("change", event => {
+verificationCode.addEventListener("change", (event) => {
   if (event.error && event.touched) {
     verificationCodeError.textContent = event.error;
   } else {
@@ -97,7 +99,7 @@ function enableForm() {
 /**
  * Submit handler
  */
-form.addEventListener("submit", async event => {
+form.addEventListener("submit", async (event) => {
   event.preventDefault();
   disableForm();
 

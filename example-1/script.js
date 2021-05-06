@@ -107,7 +107,7 @@ function enableForm() {
 /**
  * Submit handler
  */
-form.addEventListener("submit", async function (event) {
+form.addEventListener("submit", function (event) {
   event.preventDefault();
   disableForm();
 
@@ -115,22 +115,26 @@ form.addEventListener("submit", async function (event) {
   formError.textContent = "";
 
   // Get a payment token
-  var { token, error } = await mollie.createToken();
+  // var { token, error } = await mollie.createToken();
 
-  if (error) {
-    enableForm();
-    formError.textContent = error.message;
-    return;
-  }
+  mollie.createToken().then(function (result) {
+    const { token, error } = result;
 
-  // Add token to the form
-  var tokenInput = document.createElement("input");
-  tokenInput.setAttribute("name", "token");
-  tokenInput.setAttribute("type", "hidden");
-  tokenInput.setAttribute("value", token);
+    if (error) {
+      enableForm();
+      formError.textContent = error.message;
+      return;
+    }
 
-  form.appendChild(tokenInput);
+    // Add token to the form
+    var tokenInput = document.createElement("input");
+    tokenInput.setAttribute("name", "token");
+    tokenInput.setAttribute("type", "hidden");
+    tokenInput.setAttribute("value", token);
 
-  // Re-submit form to the server
-  form.submit();
+    form.appendChild(tokenInput);
+
+    // Re-submit form to the server
+    form.submit();
+  });
 });

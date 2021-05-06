@@ -15,6 +15,8 @@ This repository contains examples on how to implement [Mollie Components](https:
 - [Example 2](./example-2) Floating labels ([codepen](example-2))
 - [Example 3](./example-3) Compact version ([codepen](example-3))
 
+- [Example 5](./example-5) Floating labels with status indicators ([codepen](example-3))
+
 ## Running locally
 
 In order to run the examples you need a webserver. Although its plain HTML, CSS and JavaScript Mollie Components needs a valid hostname (e.g. localhost or 127.0.0.1). For this README example we use the [serve](https://www.npmjs.com/package/serve) package but any other webserver should work just fine.

@@ -1,16 +1,16 @@
-# Examples 1
+# Examples 2
 
 For more or other examples please check out our main [README](../)
 
-This example shows
+This example showcases
 
-- Floating labels
+- Dark layout (supply options for styling to Mollie Component inputs)
 - Native CSS styling
-- Working with ES5
+- ES5 Compatible
 
 [HTML](example-2/index.html) | [CSS](example-2/style.css) | [Javascript](example-2/script.js)
 
-![](screenshots/example-1.gif)
+![](screenshots/example-2.gif)
 
 ## Documentation
 

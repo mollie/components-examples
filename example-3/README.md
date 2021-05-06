@@ -1,12 +1,12 @@
-# Examples 1
+# Examples 3
 
 For more or other examples please check out our main [README](../)
 
-This example shows
+This example showcases
 
-- Floating labels
+- Round inputs
 - Native CSS styling
-- Working with ES5
+- ES5 Compatible
 
 [HTML](example-3/index.html) | [CSS](example-3/style.css) | [Javascript](example-3/script.js)
 

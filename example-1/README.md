@@ -2,11 +2,11 @@
 
 For more or other examples please check out our main [README](../)
 
-This example shows
+This example showcases
 
-- Floating labels
+- Basic example
 - Native CSS styling
-- Working with ES5
+- ES5 Compatible
 
 [HTML](example-1/index.html) | [CSS](example-1/style.css) | [Javascript](example-1/script.js)
 

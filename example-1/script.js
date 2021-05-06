@@ -115,10 +115,10 @@ form.addEventListener("submit", function (event) {
   formError.textContent = "";
 
   // Get a payment token
-  // var { token, error } = await mollie.createToken();
 
   mollie.createToken().then(function (result) {
-    const { token, error } = result;
+    var token = result.token;
+    var error = result.error;
 
     if (error) {
       enableForm();

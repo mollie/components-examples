@@ -147,26 +147,16 @@ form.addEventListener("submit", function (event) {
     form.submit();
   });
 });
-// Extra styling listeners for floating labels
-function toggleFocusFieldClass({ elementId, className, toggleSwitch }) {
-  var element = document.getElementById(elementId);
 
-  if (toggleSwitch) {
-    element.parentNode.classList.add(className);
-  } else {
-    element.parentNode.classList.remove(className);
-  }
-}
+function toggleFieldClass(elementClassObj) {
+  var element = document.getElementById(elementClassObj.elementId);
 
-function toggleFieldClass({ elementId, toggleClassesObject }) {
-  var element = document.getElementById(elementId);
-
-  Object.keys(toggleClassesObject).forEach(function (key) {
-    if (typeof toggleClassesObject[key] !== "boolean") {
+  Object.keys(elementClassObj.toggleClassesObject).forEach(function (key) {
+    if (typeof elementClassObj.toggleClassesObject[key] !== "boolean") {
       return;
     }
 
-    if (toggleClassesObject[key]) {
+    if (elementClassObj.toggleClassesObject[key]) {
       element.parentNode.classList.add("is-" + key);
     } else {
       element.parentNode.classList.remove("is-" + key);
@@ -175,56 +165,56 @@ function toggleFieldClass({ elementId, toggleClassesObject }) {
 }
 
 // Some extra listeners for styling purposes
-cardNumber.addEventListener("focus", () =>
+cardNumber.addEventListener("focus", function () {
   toggleFieldClass({
     elementId: "card-number",
     toggleClassesObject: { focussed: true },
-  })
-);
+  });
+});
 
-cardNumber.addEventListener("blur", () =>
+cardNumber.addEventListener("blur", function () {
   toggleFieldClass({
     elementId: "card-number",
     toggleClassesObject: { focussed: false },
-  })
-);
+  });
+});
 
-cardHolder.addEventListener("focus", () =>
+cardHolder.addEventListener("focus", function () {
   toggleFieldClass({
     elementId: "card-holder",
     toggleClassesObject: { focussed: true },
-  })
-);
+  });
+});
 
-cardHolder.addEventListener("blur", () =>
+cardHolder.addEventListener("blur", function () {
   toggleFieldClass({
     elementId: "card-holder",
     toggleClassesObject: { focussed: false },
-  })
-);
+  });
+});
 
-expiryDate.addEventListener("focus", () =>
+expiryDate.addEventListener("focus", function () {
   toggleFieldClass({
     elementId: "expiry-date",
     toggleClassesObject: { focussed: true },
-  })
-);
-expiryDate.addEventListener("blur", () =>
+  });
+});
+expiryDate.addEventListener("blur", function () {
   toggleFieldClass({
     elementId: "expiry-date",
     toggleClassesObject: { focussed: false },
-  })
-);
-verificationCode.addEventListener("focus", () =>
+  });
+});
+verificationCode.addEventListener("focus", function () {
   toggleFieldClass({
     elementId: "verification-code",
     toggleClassesObject: { focussed: true },
-  })
-);
+  });
+});
 
-verificationCode.addEventListener("blur", () =>
+verificationCode.addEventListener("blur", function () {
   toggleFieldClass({
     elementId: "verification-code",
     toggleClassesObject: { focussed: false },
-  })
-);
+  });
+});

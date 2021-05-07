@@ -8,7 +8,7 @@ This example showcases
 - Native CSS styling
 - ES5 Compatible
 
-[HTML](example-3/index.html) | [CSS](example-3/style.css) | [Javascript](example-3/script.js)
+[HTML](./index.html) | [CSS](./style.css) | [Javascript](./script.js)
 
 ![](screenshots/example-3.gif)
 

@@ -87,14 +87,19 @@ input:focus ~ label,
   margin-bottom: 16px;
 }
 
-.mollie-component.is-invalid::after {
+.mollie-component::after {
+  transition: 0.5s width cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #3a4;
   content: "";
   position: absolute;
   bottom: -1px;
-  width: 100%;
+  width: 0%;
   left: 0;
   border-bottom: 1px solid #ce0000;
+}
+
+.mollie-component.is-invalid::after {
+  width: 100%;
 }
 
 .form-group.is-touched.is-valid .field-error {

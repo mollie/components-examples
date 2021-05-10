@@ -1,16 +1,16 @@
-# Examples 1
+# Examples 2
 
 For more or other examples please check out our main [README](../)
 
 This example showcases
 
-- Basic example
+- Dark layout (supply options for styling to Mollie Component inputs)
 - Native CSS styling
 - ES5 Compatible
 
-[HTML](./index.html) | [CSS](./styles.css) | [Javascript](./script.js)
+[HTML](./index.html) | [CSS](./style.css) | [Javascript](./script.js)
 
-![](screenshots/example-1.gif)
+![](screenshots/example-2.gif)
 
 ## Documentation
 

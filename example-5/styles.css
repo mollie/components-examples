@@ -1,0 +1,142 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  background: #f9f9fc;
+}
+
+.wrapper {
+  display: flex;
+  margin: 40px auto 0;
+  width: 80%;
+}
+
+.wrapper form {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  margin: 1px 0;
+}
+
+/* form group */
+.form-group {
+  width: 100%;
+  position: relative;
+}
+
+.form-group label {
+  position: absolute;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  color: #a3b2c6;
+  height: 69px;
+  left: 16px;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 5;
+}
+
+.form-group--expiry-date label,
+.form-group.is-dirty label,
+.form-group.is-focussed label {
+  font-size: 14px;
+  transform: translateY(-12px);
+}
+
+.mollie-component {
+  position: relative;
+  background: #f1f4f8;
+  padding: 34px 16px 12px;
+  border: 1px solid transparent;
+  transition: 0.15s border-color cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 500;
+}
+
+.mollie-component::before {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  width: 2px;
+  top: 14px;
+  left: 0;
+  bottom: 14px;
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    250ms background-color cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mollie-component.is-invalid::before {
+  opacity: 1;
+  background-color: #ff1717;
+}
+
+.mollie-component.is-valid::before {
+  opacity: 1;
+  background-color: #4ddd9e;
+}
+
+.mollie-component.is-dirty::before,
+.mollie-component.has-focus::before {
+  opacity: 1;
+  background-color: #4a3eee;
+}
+
+.mollie-component--cardHolder {
+  border-radius: 8px 8px 0 0;
+}
+
+.mollie-component--expiryDate {
+  border-radius: 0 0 0 8px;
+}
+
+.mollie-component--verificationCode {
+  border-radius: 0 0 8px 0;
+}
+
+.form-group.is-touched.is-valid .field-error {
+  padding: 0;
+}
+
+.form-group.is-touched .field-error {
+  color: #ff1717;
+  font-weight: 400;
+  background-color: #ffe5e6;
+  padding: 1px 0 1px 16px;
+  font-size: 11px;
+}
+
+button.submit-button {
+  width: 100%;
+  border: 0;
+  background: #4a3eee;
+  border-radius: 8px;
+  padding: 14px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.9;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  outline: 0;
+  transition: 0.3s opacity cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+button.submit-button:hover {
+  opacity: 1;
+}
+
+.form-fields {
+  margin-bottom: 24px;
+}
+
+.form-group--expiry-date {
+  margin-right: 1px;
+}
+
+.form-group--verification-code {
+  margin-left: 1px;
+}

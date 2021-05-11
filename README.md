@@ -11,11 +11,25 @@ This repository contains examples on how to implement [Mollie Components](https:
 
 ## Examples
 
-- [Example 1](./example-1/) Bare minimum example
-- [Example 2](./example-2/) Floating labels
-- [Example 3](./example-3/) Compact version
-- [Example 4](./example-4/) Floating labels and other input integration
-- [Example 5](./example-5/) Floating labels with status indicators
+- [Example 1](./example-1/): Basic example
+
+<a href="./example-1/"><img src="./screenshots/mollie.github.io_components-examples_1.png" width="500px" alt="Example 1"/></a>
+
+- [Example 2](./example-2/): Floating labels
+
+<a href="./example-2/"><img src="./screenshots/mollie.github.io_components-examples_2.png" width="500px" alt="Example 2"/></a>
+
+- [Example 3](./example-3/): Vertical layout
+
+<a href="./example-3/"><img src="./screenshots/mollie.github.io_components-examples_3.png" width="500px" alt="Example 3"/></a>
+
+- [Example 4](./example-4/): Floating labels and additional input fields
+
+<a href="./example-4/"><img src="./screenshots/mollie.github.io_components-examples_4.png" width="500px" alt="Example 4"/></a>
+
+- [Example 5](./example-5/): Floating labels with status indicators
+
+<a href="./example-5/"><img src="./screenshots/mollie.github.io_components-examples_5.png" width="500px" alt="Example 5"/></a>
 
 ## Running locally
 

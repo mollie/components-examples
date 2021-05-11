@@ -1,4 +1,4 @@
-# Examples 1
+# Example 1
 
 For more or other examples please check out our main [README](../)
 

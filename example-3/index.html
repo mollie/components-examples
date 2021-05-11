@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Round inputs - Mollie Components</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <form method="post" class="form" id="mcForm">
+        <div class="form-fields">
+          <div class="form-group form-group--card-holder">
+            <label class="label" for="card-holder">Name</label>
+            <div>
+              <div id="card-holder"></div>
+              <div
+                id="card-holder-error"
+                class="field-error"
+                role="alert"
+              ></div>
+            </div>
+          </div>
+
+          <div class="form-group form-group--card-number">
+            <label class="label" for="card-number">Credit card number</label>
+            <div>
+              <div id="card-number"></div>
+              <div
+                id="card-number-error"
+                class="field-error"
+                role="alert"
+              ></div>
+            </div>
+          </div>
+
+          <div class="form-group form-group--expiry-date">
+            <label class="label" for="expiry-date">Expiry date</label>
+            <div>
+              <div id="expiry-date"></div>
+              <div
+                id="expiry-date-error"
+                class="field-error"
+                role="alert"
+              ></div>
+            </div>
+          </div>
+
+          <div class="form-group form-group--verification-code">
+            <label class="label" for="verification-code">CVC</label>
+            <div>
+              <div id="verification-code"></div>
+              <div
+                id="verification-code-error"
+                class="field-error"
+                role="alert"
+              ></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group button">
+          <div></div>
+          <button id="submit-button" class="submit-button" type="submit">
+            Pay €239.00
+          </button>
+        </div>
+
+        <div id="form-error" class="field-error" role="alert"></div>
+      </form>
+    </div>
+
+    <!-- we need to polyfill Promise, so we have Promise functionality available in IE11 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/promise-polyfill/8.2.0/polyfill.min.js" integrity="sha512-YK+bAjUuYdjPksbGQIIIsUn5hgYFsc+nXgx21Wwby9Mv+rJd8WZH2FRe1RdlTjFu1vxlGia9/RqmUMcZtX+BrA==" crossorigin="anonymous"></script>
+    <script src="https://js.mollie.com/v1/mollie.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

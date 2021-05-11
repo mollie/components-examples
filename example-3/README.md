@@ -1,16 +1,16 @@
-# Example 1
+# Examples 3
 
 For more or other examples please check out our main [README](../)
 
 This example showcases
 
-- Basic example
+- Round inputs
 - Native CSS styling
 - ES5 Compatible
 
-[HTML](./index.html) | [CSS](./styles.css) | [Javascript](./script.js)
+[HTML](./index.html) | [CSS](./style.css) | [Javascript](./script.js)
 
-![](screenshots/example-1.gif)
+![](screenshots/example-3.gif)
 
 ## Documentation
 

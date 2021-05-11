@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Floating Labels with status indication - Mollie Components</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://cdn.mollie.com/assets/favicon.ico"
+    />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <form method="post" class="form" id="mcForm">
+        <div class="form-fields">
+          <div class="row">
+            <div class="form-group form-group--card-holder">
+              <label class="label" for="card-holder">Name</label>
+              <div id="card-holder"></div>
+              <div
+                id="card-holder-error"
+                class="field-error"
+                role="alert"
+              ></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group form-group--email">
+              <input
+                id="form-input--email"
+                class="form-input form-input--email"
+                placeholder=" "
+              />
+              <label class="label" for="form-input--email">Email</label>
+            </div>
+            <div class="form-group form-group--phone">
+              <input
+                id="form-input--phone"
+                class="form-input form-input--phone"
+                placeholder=" "
+              />
+              <label class="label" for="form-input--phone">Phone</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group form-group--address">
+              <input
+                id="form-input--address"
+                class="form-input form-input--address"
+                placeholder=" "
+              />
+              <label class="label" for="form-input--address">Address</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group form-group--zipcode">
+              <input
+                id="form-input--zipcode"
+                class="form-input form-input--zipcode"
+                placeholder=" "
+              />
+              <label class="label" for="form-input--zipcode">Zip code</label>
+            </div>
+
+            <div class="form-group form-group--city">
+              <input
+                id="form-input--city"
+                class="form-input form-input--city"
+                placeholder=" "
+              />
+              <label class="label form-input--city" for="form-input--city"
+                >City</label
+              >
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group form-group--card-number">
+              <div id="card-number"></div>
+              <label class="label" for="card-number">Card number</label>
+              <div
+                id="card-number-error"
+                class="field-error"
+                role="alert"
+              ></div>
+            </div>
+
+            <div class="form-group form-group--expiry-date">
+              <label class="label" for="expiry-date">Expiry date</label>
+              <div id="expiry-date"></div>
+              <div
+                id="expiry-date-error"
+                class="field-error"
+                role="alert"
+              ></div>
+            </div>
+
+            <div class="form-group form-group--verification-code">
+              <label class="label" for="verification-code">CVC</label>
+              <div id="verification-code"></div>
+              <div
+                id="verification-code-error"
+                class="field-error"
+                role="alert"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <button id="submit-button" class="submit-button" type="submit">
+          Pay €239.00
+        </button>
+        <div id="form-error" class="field-error" role="alert"></div>
+      </form>
+    </div>
+
+    <!-- Polyfill Promise, so we have Promise functionality available in IE11 -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/promise-polyfill/8.2.0/polyfill.min.js"
+      integrity="sha512-YK+bAjUuYdjPksbGQIIIsUn5hgYFsc+nXgx21Wwby9Mv+rJd8WZH2FRe1RdlTjFu1vxlGia9/RqmUMcZtX+BrA=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://js.mollie.com/v1/mollie.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

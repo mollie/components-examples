@@ -11,11 +11,11 @@ This repository contains examples on how to implement [Mollie Components](https:
 
 ## Examples
 
-- [Example 1](./example-1) Bare minimum example
-- [Example 2](./example-2) Floating labels
-- [Example 3](./example-3) Compact version
-
-- [Example 5](./example-5) Floating labels with status indicators
+- [Example 1](./example-1/) Bare minimum example
+- [Example 2](./example-2/) Floating labels
+- [Example 3](./example-3/) Compact version
+- [Example 4](./example-4/) Floating labels and other input integration
+- [Example 5](./example-5/) Floating labels with status indicators
 
 ## Running locally
 

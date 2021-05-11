@@ -1,16 +1,18 @@
-# Example 1
+# Examples 4
 
 For more or other examples please check out our main [README](../)
 
 This example showcases
 
-- Basic example
+- Floating labels
 - Native CSS styling
-- ES5 Compatible
+- Works with ES5
+- Focus, valid and error indicators
+- Integration with more input fields
 
-[HTML](./index.html) | [CSS](./styles.css) | [Javascript](./script.js)
+[HTML](example-4/index.html) | [CSS](example-4/style.css) | [Javascript](example-4/script.js)
 
-![](screenshots/example-1.gif)
+![](screenshots/example-4.gif)
 
 ## Documentation
 

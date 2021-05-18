@@ -1,51 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-    <title>Example 2 - Mollie Components</title>
-    <link rel="stylesheet" href="/base.css" />
-    <link rel="stylesheet" href="./style.css" />
+    <title>Dark Example - Mollie Components</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://cdn.mollie.com/assets/favicon.ico"
+    />
   </head>
-  <body>
-    <a class="link-source" target="_blank" rel="noopener noreferrer" href="https://github.com/mollie/components-examples/tree/master/example-2">View source</a>
 
+  <body>
     <div class="wrapper">
       <form method="post" class="form" id="mcForm">
         <div class="form-fields">
-          <div id="card-holder-group" class="form-group form-group--cardHolder">
-            <label class="label" for="card-holder">Card holder</label>
-            <div id="card-holder"></div>
-            <div id="card-holder-error" class="field-error" role="alert"></div>
+          <div class="row">
+            <div class="form-group form-group--card-number">
+              <label class="label" for="card-number">Card number</label>
+              <div id="card-number"></div>
+              <div
+                id="card-number-error"
+                class="field-error"
+                role="alert"
+              ></div>
+            </div>
           </div>
 
-          <div class="form-group form-group--cardNumber">
-            <label class="label" for="card-number">Card number</label>
-            <div id="card-number"></div>
-            <div id="card-number-error" class="field-error" role="alert"></div>
-          </div>
+          <div class="row">
+            <div class="form-group form-group--card-holder">
+              <label class="label" for="card-holder">Name</label>
+              <div id="card-holder"></div>
+              <div
+                id="card-holder-error"
+                class="field-error"
+                role="alert"
+              ></div>
+            </div>
 
-          <div class="form-group form-group--expiryDate">
-            <label class="label" for="expiry-date">Expiry date</label>
-            <div id="expiry-date"></div>
-            <div id="expiry-date-error" class="field-error" role="alert"></div>
-          </div>
+            <div class="form-group form-group--expiry-date">
+              <label class="label" for="expiry-date">Expiry date</label>
+              <div id="expiry-date"></div>
+              <div
+                id="expiry-date-error"
+                class="field-error"
+                role="alert"
+              ></div>
+            </div>
 
-          <div class="form-group form-group--verificationCode">
-            <label class="label" for="verification-code">Verification code</label>
-            <div id="verification-code"></div>
-            <div id="verification-code-error" class="field-error" role="alert"></div>
+            <div class="form-group form-group--verification-code">
+              <label class="label" for="verification-code">CVC</label>
+              <div id="verification-code"></div>
+              <div
+                id="verification-code-error"
+                class="field-error"
+                role="alert"
+              ></div>
+            </div>
           </div>
         </div>
 
         <button id="submit-button" class="submit-button" type="submit">
-          Pay
+          Pay €239.00
         </button>
 
-        <div id="form-error" class="form-error" role="alert"></div>
+        <div id="form-error" class="field-error" role="alert"></div>
       </form>
     </div>
 
+    <!-- we need to polyfill Promise, so we have Promise functionality available in IE11 -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/promise-polyfill/8.2.0/polyfill.min.js"
+      integrity="sha512-YK+bAjUuYdjPksbGQIIIsUn5hgYFsc+nXgx21Wwby9Mv+rJd8WZH2FRe1RdlTjFu1vxlGia9/RqmUMcZtX+BrA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="https://js.mollie.com/v1/mollie.js"></script>
     <script src="./script.js"></script>
   </body>

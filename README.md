@@ -1,31 +1,54 @@
 # Mollie Components Examples
 
-This repository contains examples on how to implement [Mollie Components](https://docs.mollie.com/guides/mollie-components/overview).
+This repository contains examples on how to implement [Mollie Components](https://docs.mollie.com/guides/mollie-components/overview). Mollie Components is a set of Javascript APIs that allows you to add the fields needed for credit card holder data to your own checkout, in a way that is fully PCI-DSS SAQ-A compliant.
 
 ## Documentation
 
-* [Overview](https://docs.mollie.com/guides/mollie-components/overview)
-* [API reference](https://docs.mollie.com/guides/mollie-components/reference)
-* [Handling errors](https://docs.mollie.com/guides/mollie-components/handling-errors) 
-* [Styling](https://docs.mollie.com/guides/mollie-components/styling) 
+- [Integration guide](https://docs.mollie.com/guides/mollie-components/overview)
+- [API reference](https://docs.mollie.com/guides/mollie-components/reference)
+- [Handling errors](https://docs.mollie.com/guides/mollie-components/handling-errors)
+- [Styling](https://docs.mollie.com/guides/mollie-components/styling)
 
-## Example 1 (regular labels)
-[HTML](example-1/index.html) | [CSS](example-1/style.css) | [Javascript](example-1/script.js)
+## Examples
 
-![](screenshots/example-1.gif)
+- [Example 1](./example-1/): Basic example
 
-## Example 2 (floating labels)
-[HTML](example-2/index.html) | [CSS](example-2/style.css) | [Javascript](example-2/script.js)
+<a href="./example-1/"><img src="./screenshots/mollie.github.io_components-examples_1.png" width="500px" alt="Example 1"/></a>
 
-![](screenshots/example-2.gif)
+- [Example 2](./example-2/): Floating labels
+
+<a href="./example-2/"><img src="./screenshots/mollie.github.io_components-examples_2.png" width="500px" alt="Example 2"/></a>
+
+- [Example 3](./example-3/): Vertical layout
+
+<a href="./example-3/"><img src="./screenshots/mollie.github.io_components-examples_3.png" width="500px" alt="Example 3"/></a>
+
+- [Example 4](./example-4/): Floating labels and additional input fields
+
+<a href="./example-4/"><img src="./screenshots/mollie.github.io_components-examples_4.png" width="500px" alt="Example 4"/></a>
+
+- [Example 5](./example-5/): Floating labels with status indicators
+
+<a href="./example-5/"><img src="./screenshots/mollie.github.io_components-examples_5.png" width="500px" alt="Example 5"/></a>
 
 ## Running locally
 
-If you have Python on your local system you can run the following command in the root directory.
+In order to run the examples you need a webserver. Although its plain HTML, CSS and JavaScript Mollie Components needs a valid hostname (e.g. localhost or 127.0.0.1). For this README example we use the [serve](https://www.npmjs.com/package/serve) package but any other webserver should work just fine.
+
+1. Clone the repo
 
 ```bash
-python -m SimpleHTTPServer 3000
+git clone git@github.com:mollie/components-examples.git
 ```
 
-Now open [localhost:3000](http://localhost:3000) in your browser to view
-the examples.
+2. Navigate to the the repo
+
+```bash
+cd components-example
+```
+
+3. Serve the examples via a webserver
+
+```bash
+npx serve
+```

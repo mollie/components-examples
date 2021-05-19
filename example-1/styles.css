@@ -24,7 +24,7 @@ label {
   opacity: 0.6;
   font-size: 18px;
   padding-bottom: 7px;
-  padding-top: 13px;
+  padding-top: 5px;
   font-weight: 500;
   display: block;
 }
@@ -48,6 +48,14 @@ label {
 .mollie-component.is-invalid {
   border-color: #ff1717;
   transition: 0.3s border-color cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#form-error.has-error {
+  background-color: rgba(206, 0, 0, 0.1);
+  padding: 5px;
+  border: 1px solid #ff1717;
+  margin-top: 10px;
+  border-radius: 4px;
 }
 
 .field-error {
@@ -85,6 +93,7 @@ button.submit-button:hover {
 
 .form-group {
   width: 100%;
+  min-height: 100px;
 }
 
 .form-group--expiry-date {

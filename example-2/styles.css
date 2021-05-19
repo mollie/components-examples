@@ -39,7 +39,7 @@ label {
 }
 
 .mollie-component.has-focus {
-  border-color: rgba(255,255,255,0.5);
+  border-color: rgba(255, 255, 255, 0.5);
 }
 
 .mollie-component.is-invalid {
@@ -48,6 +48,13 @@ label {
 
 .mollie-component.is-valid {
   border-color: rgba(140, 252, 136, 0.5);
+}
+
+#form-error.has-error {
+  background-color: rgba(206, 0, 0, 0.1);
+  padding: 5px;
+  border: 1px solid #ff5555;
+  margin-top: 10px;
 }
 
 .field-error {
@@ -69,7 +76,6 @@ button.submit-button {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   outline: 0;
-  cursor: pointer;
   transition: 0.3s opacity cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -84,7 +90,7 @@ button.submit-button:hover {
 .row {
   display: flex;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .row:last-child {
@@ -103,6 +109,7 @@ button.submit-button:hover {
   width: 100%;
   margin: 0 8px;
   flex: 1 1 20%;
+  min-height: 85px;
 }
 
 .form-group--card-holder {

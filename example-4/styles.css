@@ -102,6 +102,15 @@ input:focus ~ label,
   width: 100%;
 }
 
+#form-error.has-error {
+  background-color: rgba(206, 0, 0, 0.1);
+  padding: 5px;
+  border: 1px solid #ce0000;
+  color: #ce0000;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
 .form-group.is-touched.is-valid .field-error {
   padding: 0;
 }

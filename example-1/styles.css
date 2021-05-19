@@ -2,7 +2,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 16px;
-  background: #e6f1ff;
+  background: #eef;
 }
 
 .wrapper {
@@ -24,15 +24,15 @@ label {
   opacity: 0.6;
   font-size: 18px;
   padding-bottom: 7px;
-  padding-top: 13px;
+  padding-top: 5px;
   font-weight: 500;
   display: block;
 }
 
 .mollie-component {
   background: #fff;
-  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.1),
-    0px 4px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1),
+    0 4px 8px rgba(0, 0, 0, 0.05);
   border-radius: 4px;
   padding: 13px;
   border: 1px solid transparent;
@@ -41,7 +41,7 @@ label {
 }
 
 .mollie-component.has-focus {
-  border-color: #0077ff;
+  border-color: #07f;
   transition: 0.3s border-color cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -50,22 +50,30 @@ label {
   transition: 0.3s border-color cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+#form-error.has-error {
+  background-color: rgba(206, 0, 0, 0.1);
+  padding: 5px;
+  border: 1px solid #f11;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
 .field-error {
   font-size: 12px;
   margin-top: 2px;
-  color: #ff1717;
+  color: #f11;
   font-weight: 400;
 }
 
 button.submit-button {
   width: 100%;
   border: 0;
-  background: #0077ff;
-  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.1),
-    0px 4px 8px rgba(0, 0, 0, 0.05);
+  background: #07f;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1),
+    0 4px 8px rgba(0, 0, 0, 0.05);
   border-radius: 4px;
   padding: 14px;
-  color: #ffffff;
+  color: #fff;
   font-weight: 600;
   font-size: 18px;
   opacity: 0.9;
@@ -85,6 +93,7 @@ button.submit-button:hover {
 
 .form-group {
   width: 100%;
+  min-height: 100px;
 }
 
 .form-group--expiry-date {

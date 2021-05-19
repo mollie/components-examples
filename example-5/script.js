@@ -129,9 +129,12 @@ form.addEventListener("submit", function (event) {
     var token = result.token;
     var error = result.error;
 
+    formError.classList.remove("has-error");
+
     if (error) {
       enableForm();
       formError.textContent = error.message;
+      formError.classList.add("has-error");
       return;
     }
 

@@ -13,10 +13,6 @@ body {
   max-width: 718px;
 }
 
-input {
-  color: #fff;
-}
-
 .wrapper form {
   width: 100%;
 }
@@ -31,7 +27,7 @@ label {
 }
 
 .mollie-component {
-  background: #dfedfa;
+  background: #def;
   border-radius: 56px;
   padding: 12px 24px;
   border: 1px solid transparent;
@@ -40,7 +36,7 @@ label {
 }
 
 .mollie-component.has-focus {
-  border-color: #8799af;
+  border-color: #89a;
 }
 
 .mollie-component.is-invalid {
@@ -49,13 +45,13 @@ label {
 }
 
 .mollie-component.is-valid {
-  border-color: #dfedfa;
+  border-color: #def;
 }
 
 #form-error.has-error {
   background-color: rgba(206, 0, 0, 0.1);
   padding: 5px;
-  border: 1px solid #ff1717;
+  border: 1px solid #f11;
   margin-top: 10px;
   border-radius: 100px;
 }
@@ -63,7 +59,7 @@ label {
 .field-error {
   font-size: 10px;
   margin-top: 4px;
-  color: #ce0000;
+  color: #c00;
   font-weight: normal;
   padding-left: 24px;
 }
@@ -72,7 +68,7 @@ button.submit-button {
   width: 100%;
   border: 0;
   border-radius: 100px;
-  background: #173d68;
+  background: #036;
   padding: 18px;
   color: #fff;
   font-weight: 600;

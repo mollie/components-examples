@@ -71,12 +71,12 @@ body {
 
 .mollie-component.is-invalid::before {
   opacity: 1;
-  background-color: #ff1717;
+  background-color: #f11;
 }
 
 .mollie-component.is-valid::before {
   opacity: 1;
-  background-color: #4ddd9e;
+  background-color: #5d9;
 }
 
 .mollie-component.is-dirty::before,
@@ -141,7 +141,7 @@ button.submit-button {
   background: #4a3eee;
   border-radius: 8px;
   padding: 14px;
-  color: #ffffff;
+  color: #fff;
   font-weight: 600;
   font-size: 18px;
   opacity: 0.9;

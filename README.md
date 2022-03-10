@@ -1,6 +1,9 @@
 # Mollie Components Examples
 
-This repository contains examples on how to implement [Mollie Components](https://docs.mollie.com/guides/mollie-components/overview). Mollie Components is a set of Javascript APIs that allows you to add the fields needed for credit card holder data to your own checkout, in a way that is fully PCI-DSS SAQ-A compliant.
+This repository contains examples on how to implement [Mollie Components](https://docs.mollie.com/guides/mollie-components/overview). Mollie Components is a set of Javascript APIs that allows you to add the fields needed for card holder data to your own checkout, in a way that is fully PCI-DSS SAQ-A compliant.
+
+See the live demo of these examples here: https://mollie.github.io/components-examples/
+
 
 ## Documentation
 

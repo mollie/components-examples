@@ -56,9 +56,11 @@ body {
   display: flex;
   align-items: center;
   color: #a3b2c6;
-  height: 48px;
   transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 5;
+  height: 1px;
+  overflow: visible;
+  margin-top: 22px;
 }
 
 input:not(:placeholder-shown) ~ label,

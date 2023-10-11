@@ -71,12 +71,12 @@ body {
 
 .mollie-component.is-invalid::before {
   opacity: 1;
-  background-color: #ff1717;
+  background-color: #f11;
 }
 
 .mollie-component.is-valid::before {
   opacity: 1;
-  background-color: #4ddd9e;
+  background-color: #5d9;
 }
 
 .mollie-component.is-dirty::before,
@@ -97,6 +97,32 @@ body {
   border-radius: 0 0 8px 0;
 }
 
+#form-error.has-error {
+  margin-top: 4px;
+  background-color: #f9e1e1;
+  padding: 5px;
+  color: #ff1717;
+  font-size: 13px;
+  margin-bottom: 10px;
+  position: absolute;
+  max-width: 75vw;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 8px;
+}
+
+#form-error.has-error::before {
+  position: absolute;
+  top: -8px;
+  left: 8px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #f9e1e1;
+}
+
 .form-group.is-touched.is-valid .field-error {
   padding: 0;
 }
@@ -115,7 +141,7 @@ button.submit-button {
   background: #4a3eee;
   border-radius: 8px;
   padding: 14px;
-  color: #ffffff;
+  color: #fff;
   font-weight: 600;
   font-size: 18px;
   opacity: 0.9;

@@ -13,10 +13,6 @@ body {
   max-width: 718px;
 }
 
-input {
-  color: #fff;
-}
-
 .wrapper form {
   width: 100%;
 }
@@ -31,7 +27,7 @@ label {
 }
 
 .mollie-component {
-  background: #dfedfa;
+  background: #def;
   border-radius: 56px;
   padding: 12px 24px;
   border: 1px solid transparent;
@@ -40,7 +36,7 @@ label {
 }
 
 .mollie-component.has-focus {
-  border-color: #8799af;
+  border-color: #89a;
 }
 
 .mollie-component.is-invalid {
@@ -49,13 +45,21 @@ label {
 }
 
 .mollie-component.is-valid {
-  border-color: #dfedfa;
+  border-color: #def;
+}
+
+#form-error.has-error {
+  background-color: rgba(206, 0, 0, 0.1);
+  padding: 5px;
+  border: 1px solid #f11;
+  margin-top: 10px;
+  border-radius: 100px;
 }
 
 .field-error {
   font-size: 10px;
   margin-top: 4px;
-  color: #ce0000;
+  color: #c00;
   font-weight: normal;
   padding-left: 24px;
 }
@@ -64,7 +68,7 @@ button.submit-button {
   width: 100%;
   border: 0;
   border-radius: 100px;
-  background: #173d68;
+  background: #036;
   padding: 18px;
   color: #fff;
   font-weight: 600;
@@ -72,7 +76,6 @@ button.submit-button {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   outline: 0;
-  cursor: pointer;
   transition: 0.3s opacity cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -82,11 +85,11 @@ button.submit-button:hover {
 
 .form-group {
   width: 100%;
-  margin: 14px 0 0 0;
   flex: 1 1 20%;
   display: flex;
   width: 100%;
   align-items: center;
+  min-height: 70px;
 }
 
 .form-group.button {

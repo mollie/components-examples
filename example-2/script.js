@@ -1,21 +1,21 @@
 /**
  * Initialize Mollie Components instance
  */
- var mollie = Mollie(
+var mollie = Mollie(
   "pfl_HgMrHhRAFm", // You can find your Profile ID in the Dashboard (https://www.mollie.com/dashboard/developers/api-keys)
   {
     locale: "en_US", // Optional. If not provided, we will determine the users' language by looking at the document and/or userAgent.
-    testmode: false // Set to true to enable test mode.
+    testmode: false, // Set to true to enable test mode.
   }
 );
 
 var options = {
   styles: {
     base: {
-      color: 'rgba(0, 0, 0, 0.8)',
-    }
-  }
-}
+      color: "rgba(0, 0, 0, 0.8)",
+    },
+  },
+};
 
 /**
  * Get elements
@@ -78,9 +78,7 @@ expiryDate.addEventListener("change", function (event) {
 var verificationCode = mollie.createComponent("verificationCode", options);
 verificationCode.mount("#verification-code");
 
-var verificationCodeError = document.getElementById(
-  "verification-code-error"
-);
+var verificationCodeError = document.getElementById("verification-code-error");
 
 verificationCode.addEventListener("change", function (event) {
   if (event.error && event.touched) {
@@ -120,9 +118,12 @@ form.addEventListener("submit", function (event) {
     var token = result.token;
     var error = result.error;
 
+    formError.classList.remove("has-error");
+
     if (error) {
       enableForm();
       formError.textContent = error.message;
+      formError.classList.add("has-error");
       return;
     }
 

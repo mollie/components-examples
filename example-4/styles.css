@@ -97,11 +97,20 @@ input:focus ~ label,
   bottom: -1px;
   width: 0%;
   left: 0;
-  border-bottom: 1px solid #ce0000;
+  border-bottom: 1px solid #c00;
 }
 
 .mollie-component.is-invalid::after {
   width: 100%;
+}
+
+#form-error.has-error {
+  background-color: rgba(206, 0, 0, 0.1);
+  padding: 5px;
+  border: 1px solid #c00;
+  color: #c00;
+  font-size: 13px;
+  margin-bottom: 10px;
 }
 
 .form-group.is-touched.is-valid .field-error {
@@ -109,7 +118,7 @@ input:focus ~ label,
 }
 
 .form-group.is-touched .field-error {
-  color: #ce0000;
+  color: #c00;
   font-weight: 400;
   padding: 1px 0;
   font-size: 10px;

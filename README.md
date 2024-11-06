@@ -34,6 +34,10 @@ See the live demo of these examples here: https://mollie.github.io/components-ex
 
 <a href="./example-5/"><img src="./screenshots/mollie.github.io_components-examples_5.png" width="838px" alt="Example 5"/></a>
 
+- [Example 6](./example-6/): Single component
+
+<a href="./example-6/"><img src="./screenshots/mollie.github.io_components-examples_6.png" width="838px" alt="Example 6"/></a>
+
 ## Running locally
 
 In order to run the examples you need a webserver. Although its plain HTML, CSS and JavaScript Mollie Components needs a valid hostname (e.g. localhost or 127.0.0.1). For this README example we use the [serve](https://www.npmjs.com/package/serve) package but any other webserver should work just fine.
